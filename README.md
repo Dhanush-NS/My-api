@@ -4,5 +4,10 @@ Node Must be installed
 3. npm install --save express cors
 4. npm install mysql
 5. node index.js
-   Check on the browser http://localhost:3000/ to see 'Hello world'
+   Check on the browser http://localhost:3000/ to see 'Hello world'.
+   
    Check http://localhost:3000/now to get the current date and time.
+
+   Check http://localhost:3000/users to get users information.
+
+   
