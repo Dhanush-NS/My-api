@@ -1,0 +1,26 @@
+{
+  "name": "my-api",
+  "version": "1.0.0",
+  "description": "Setting Up my personal API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreekanth7899/My-api.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "P Y Shreekanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreekanth7899/My-api/issues"
+  },
+  "homepage": "https://github.com/shreekanth7899/My-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
