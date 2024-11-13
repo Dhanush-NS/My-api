@@ -2,11 +2,12 @@ const express = require('express')
 const cors = require('cors')
 const mysql = require('mysql2')
 const app = express()
+const port = 3000;
 
 const connection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: '',
+    password: 'root',
     database: 'myapi',
     port: '3306'
 });
@@ -15,7 +16,7 @@ const pool = mysql.createPool({
     connectionLimit: 10,
     host: '127.0.0.1',
     user: 'root',
-    password: '',
+    password: 'root',
     database: 'myapi',
     port: '3306'
 })
@@ -74,4 +75,7 @@ app.get('/users', (req, res) => {
     console.log('MySQL connection closed');
   });
 
-app.listen(3000)
+app.listen(port,'127.0.0.1',()=>{
+  console.log(`Server running at http://127.0.0.1:${port}`);
+  
+})
